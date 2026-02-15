@@ -1,0 +1,47 @@
+{
+
+  "__ITEMS__": "---------------- ПРЕДМЕТЫ ----------------",
+
+  "item.origins-es.heart": "Heart",
+  "item.origins-es.heartbox": "Heart Box",
+  "item.origins-es.heartshard": "Heart Shard",
+  "item.origins-es.lifestealer": "LifeStealer",
+  "item.origins-es.rtpingredientsbag1": "RTP Ingredient bag I",
+  "item.origins-es.rtpingredientsbag2": "RTP Ingredient bag II",
+
+  "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
+
+  "effect.origins-es.rtp": "RTP",
+  "item.minecraft.potion.effect.rtp_potion": "RTP Potion I",
+  "item.minecraft.splash_potion.effect.rtp_potion": "RTP Splash Potion I",
+  "item.minecraft.lingering_potion.effect.rtp_potion": "RTP Lingering Potion I",
+  "item.minecraft.tipped_arrow.effect.rtp_potion": "RTP Arrow I",
+  "item.minecraft.potion.effect.absolute_rtp_potion": "RTP Potion II",
+  "item.minecraft.splash_potion.effect.absolute_rtp_potion": "RTP Splash Potion II",
+  "item.minecraft.lingering_potion.effect.absolute_rtp_potion": "RTP Lingering Potion II",
+  "item.minecraft.tipped_arrow.effect.absolute_rtp_potion": "RTP Arrow II",
+
+  "__RACES__": "---------------- РАСЫ ----------------",
+
+  "origin.origins-es.koj428.description": "who the fck is this? difficult: +5",
+  "origin.origins-es.mr_white_____.description": "white man with white... nevermind. difficult: +50(need to fix)",
+  "origin.origins-es.yud0o0.description": "",
+
+  "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
+
+  "power.origins-es.rtppoting.name": "[+]Grandpa's tincture",
+  "power.origins-es.rtppoting.description": "You’ve inherited your grandpa's legendary moonshine wisdom. This lets you craft sketchy ingredient bags for both Random Teleport and Absolute Random Teleport potions. Side effects may include sudden location changes. difficulty: +20",
+
+  "power.origins-es.blind.name": "[-]blind",
+  "power.origins-es.blind.description": "ur vision is so bad bro. difficult: -35",
+
+  "power.origins-es.savetpmark.name": "[+]Save TP Mark",
+  "power.origins-es.savetpmark.description": "save your tp mark. if you sneaking it will save your targeted entity if you not it will save your coordinates.",
+
+  "power.origins-es.tptotpmark.name": "[+]TP to TP Mark",
+  "power.origins-es.tptotpmark.description": "tp you to your tp mark. if you sneaking it will tp you to your saved entity if you not it will tp you to your saved coordinates. difficult: +20",
+
+  "power.origins-es.shield_crush.name": "[+]Crush Shield!",
+  "power.origins-es.shield_crush.description": "Hit on opponents shield will in moment crush it and hit again. difficult: +5"
+
+}

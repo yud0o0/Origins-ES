@@ -1,0 +1,9 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "esmain tpmarksave"
+  },
+  "key": { "key": "key.origins.primary_active" },
+  "cooldown": 20
+}

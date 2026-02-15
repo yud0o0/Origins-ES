@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "yud0o0.main.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "MaceShieldMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

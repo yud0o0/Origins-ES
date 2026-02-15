@@ -1,0 +1,14 @@
+{
+  "powers": [
+    "origins-es:savetpmark",
+    "origins-es:tptotpmark",
+    "origins-es:rtppoting",
+    "origins-es:blind"
+  ],
+  "icon": {
+    "id": "minecraft:barrier"
+  },
+  "order": 3,
+  "impact": 2,
+  "name": "koj428"
+}

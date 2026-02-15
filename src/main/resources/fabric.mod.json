@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "origins-es",
+	"version": "${version}",
+	"name": "Origins-ES",
+	"description": "mod made specially for server ES.",
+	"authors": [
+		"yud0o0"
+	],
+	"contact": {
+		"sources": "https://github.com/yud0o0/Origins-ES"
+	},
+	"license": "MIT",
+	"icon": "assets/origins-es/icon.png",
+	"environment": "*",
+	"custom": {
+		"cardinal-components": [
+			"origins-es:teleport_data"
+		]
+	},
+	"entrypoints": {
+		"main": [
+			"yud0o0.main.OriginsES"
+		],
+		"cardinal-components": [
+			"yud0o0.main.ESComponents"
+		]
+	},
+	"mixins": [
+		"origins-es.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"origins" : "*"
+	}
+}

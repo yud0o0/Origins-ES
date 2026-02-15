@@ -1,0 +1,47 @@
+{
+
+  "__ITEMS__": "---------------- ПРЕДМЕТЫ ----------------",
+
+  "item.origins-es.heart": "Сердце",
+  "item.origins-es.heartbox": "Ящик Жизни",
+  "item.origins-es.heartshard": "Осколок сердца",
+  "item.origins-es.lifestealer": "LifeStealer",
+  "item.origins-es.rtpingredientsbag1": "Мешочек ингредиентов зелья рандомной телепортации I уровня",
+  "item.origins-es.rtpingredientsbag2": "Мешочек ингредиентов зелья рандомной телепортации II уровня",
+
+  "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
+
+  "effect.origins-es.rtp": "Рандомная Телепортация",
+  "item.minecraft.potion.effect.rtp_potion": "Зелье Рандомного Телепорта I",
+  "item.minecraft.splash_potion.effect.rtp_potion": "Взрывное зелье Рандомного Телепорта I",
+  "item.minecraft.lingering_potion.effect.rtp_potion": "Оседающее зелье Рандомного Телепорта I",
+  "item.minecraft.tipped_arrow.effect.rtp_potion": "Стрела Рандомного Телепорта I",
+  "item.minecraft.potion.effect.absolute_rtp_potion": "Зелье Рандомного Телепорта II",
+  "item.minecraft.splash_potion.effect.absolute_rtp_potion": "Взрывное зелье Рандомного Телепорта II",
+  "item.minecraft.lingering_potion.effect.absolute_rtp_potion": "Оседающее зелье Рандомного Телепорта II",
+  "item.minecraft.tipped_arrow.effect.absolute_rtp_potion": "Стрела Рандомного Телепорта II",
+
+  "__RACES__": "---------------- РАСЫ ----------------",
+
+  "origin.origins-es.koj428.description": "кто эт нах? Сложность: +5",
+  "origin.origins-es.mr_white_____.description": "прост белый чел с такими же белыми... неважно. Сложность: +50(нужно забалансить)",
+  "origin.origins-es.yud0o0.description": "",
+
+  "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
+
+  "power.origins-es.rtppoting.name": "[+]Настойка деда",
+  "power.origins-es.rtppoting.description": "Вы переняли знания своего деда о варке лучших настоек что позволяет вам сделать мешочки ингредиентов для зелья случайной телепортации и абсолютного зелья случайной телепортации. Сложность: +20",
+
+  "power.origins-es.blind.name": "[-]слепой",
+  "power.origins-es.blind.description": "твоё зрение это пиздец, бро. Сложность: -35",
+
+  "power.origins-es.savetpmark.name": "[+]Сохранить метку телепортации",
+  "power.origins-es.savetpmark.description": "Сохраняет вашу точку телепортации. Если вы крадетесь — целью станет существо, на которое вы смотрите. Если нет — будут сохранены ваши текущие координаты.",
+
+  "power.origins-es.tptotpmark.name": "[+]Телепортироваться к метке телепортации",
+  "power.origins-es.tptotpmark.description": "Переносит вас к сохраненной метке. Если вы крадетесь — вы перенесетесь к сохраненному существу. Если нет — вы переместитесь по сохраненным координатам. Сложность: +20",
+
+  "power.origins-es.shield_crush.name": "[+]Пробить Щит!",
+  "power.origins-es.shield_crush.description": "Удар булавой об щит противника пробивает щит и после срабатывает второй раз. Сложность: +5"
+
+}

@@ -1,0 +1,44 @@
+{
+  "type": "apoli:multiple",
+  "rtp_bag1": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-es:rtppoting/rtp_bag1",
+      "pattern": [
+        "C",
+        "B"
+      ],
+      "key": {
+        "B": { "item": "minecraft:leather" },
+        "C": { "item": "minecraft:chorus_fruit" }
+      },
+      "result": {
+        "id": "origins-es:rtpingredientsbag1",
+        "count": 1
+      }
+    }
+  },
+  "rtp_bag2": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-es:rtppoting/rtp_bag2",
+      "pattern": [
+        " D ",
+        "RSR",
+        " B "
+      ],
+      "key": {
+        "B": { "item": "minecraft:leather" },
+        "S": { "item": "minecraft:nether_star" },
+        "D": { "item": "minecraft:dragon_head" },
+        "R": { "item": "minecraft:end_crystal" }
+      },
+      "result": {
+        "id": "origins-es:rtpingredientsbag2",
+        "count": 1
+      }
+    }
+  }
+}

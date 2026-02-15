@@ -1,0 +1,18 @@
+{
+  "type": "apoli:stacking_status_effect",
+  "min_stacks": -20,
+  "max_stacks": 361,
+  "duration_per_stack": 10,
+  "effects": [ {
+    "id": "minecraft:darkness",
+    "is_ambient": true,
+    "show_particles": true,
+    "show_icon": true
+  },{
+    "id": "minecraft:night_vision",
+    "is_ambient": true,
+    "show_particles": false,
+    "show_icon": false
+  }
+    ]
+}

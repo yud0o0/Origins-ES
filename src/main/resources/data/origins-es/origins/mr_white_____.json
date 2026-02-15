@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-es:shield_crush"
+  ],
+  "icon": {
+    "id": "minecraft:mace"
+  },
+  "order": 3,
+  "impact": 2,
+  "name": "mr_white_____"
+}
