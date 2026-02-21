@@ -21,6 +21,8 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import yud0o0.main.powers.action.ESEntityActionTypes;
+
 public class OriginsES implements ModInitializer {
 	public static final String MOD_ID = "origins-es";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -43,9 +45,13 @@ public class OriginsES implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ESEntityActionTypes.register();
 		ESItems.register();
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
 			content.addAfter(Items.NETHER_STAR, ESItems.HEARTBOX, ESItems.HEART, ESItems.HEARTSHARD, ESItems.RTPINGREDIENTSBAGI, ESItems.RTPINGREDIENTSBAGII);
+		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
+			content.addAfter(Items.BREEZE_ROD, ESItems.OBSIDIAN_ROD);
 		});
 		ItemStack afterStack = PotionContentsComponent.createStack(Items.TIPPED_ARROW, Potions.STRONG_HARMING);
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
@@ -87,7 +93,7 @@ public class OriginsES implements ModInitializer {
 			);
 		});
 
-		new ESTeleportMarks().main();
+		new ESCommands().init();
 		LOGGER.info("Origins-ES was instalized");
 	}
 }

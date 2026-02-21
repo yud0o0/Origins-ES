@@ -1,0 +1,103 @@
+{
+  "type": "apoli:multiple",
+  "heavy_core": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-es:favtoy/heavy_core",
+      "pattern": [
+        "DRD",
+        "ONO",
+        "DRD"
+      ],
+      "key": {
+        "D": { "item": "minecraft:deepslate" },
+        "R": { "item": "minecraft:breeze_rod" },
+        "O": { "item": "minecraft:obsidian" },
+        "N": { "item": "minecraft:netherite_ingot" }
+      },
+      "result": {
+        "id": "minecraft:heavy_core",
+        "count": 1
+      }
+    }
+  },
+  "wind_burst1": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "wind_burst",
+      "id": "origins-es:favtoy/wind_burst1",
+      "ingredients": [
+        { "item": "minecraft:book" },
+        { "item": "minecraft:smithing_table" },
+        { "item": "minecraft:netherite_scrap" }
+      ],
+      "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+          "minecraft:stored_enchantments": {
+            "levels": {
+              "minecraft:wind_burst": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "wind_burst2": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "wind_burst",
+      "id": "origins-es:favtoy/wind_burst2",
+      "ingredients": [
+        { "item": "minecraft:book" },
+        { "item": "minecraft:smithing_table" },
+        { "item": "minecraft:netherite_scrap" },
+        { "item": "minecraft:netherite_ingot" }
+      ],
+      "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+          "minecraft:stored_enchantments": {
+            "levels": {
+              "minecraft:wind_burst": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "wind_burst3": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "wind_burst",
+      "id": "origins-es:favtoy/wind_burst3",
+      "ingredients": [
+        { "item": "minecraft:book" },
+        { "item": "minecraft:smithing_table" },
+        { "item": "minecraft:netherite_scrap" },
+        { "item": "minecraft:netherite_ingot" },
+        { "item": "minecraft:nether_star" }
+      ],
+      "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+          "minecraft:stored_enchantments": {
+            "levels": {
+              "minecraft:wind_burst": 3
+            }
+          }
+        }
+      }
+    }
+  }
+}

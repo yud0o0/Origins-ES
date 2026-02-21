@@ -22,6 +22,9 @@
 		"main": [
 			"yud0o0.main.OriginsES"
 		],
+		"fabric-datagen": [
+			"yud0o0.main.ESDataGenerator"
+		],
 		"cardinal-components": [
 			"yud0o0.main.ESComponents"
 		]

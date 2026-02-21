@@ -8,6 +8,7 @@
   "item.origins-es.lifestealer": "LifeStealer",
   "item.origins-es.rtpingredientsbag1": "RTP Ingredient bag I",
   "item.origins-es.rtpingredientsbag2": "RTP Ingredient bag II",
+  "item.origins-es.obsidian_rod": "Obsidian Rod",
 
   "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
 
@@ -24,7 +25,7 @@
   "__RACES__": "---------------- РАСЫ ----------------",
 
   "origin.origins-es.koj428.description": "who the fck is this? difficult: +5",
-  "origin.origins-es.mr_white_____.description": "white man with white... nevermind. difficult: +50(need to fix)",
+  "origin.origins-es.mr_white_____.description": "white man with white... nevermind. difficult: +10",
   "origin.origins-es.yud0o0.description": "",
 
   "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
@@ -35,13 +36,34 @@
   "power.origins-es.blind.name": "[-]blind",
   "power.origins-es.blind.description": "ur vision is so bad bro. difficult: -35",
 
-  "power.origins-es.savetpmark.name": "[+]Save TP Mark",
-  "power.origins-es.savetpmark.description": "save your tp mark. if you sneaking it will save your targeted entity if you not it will save your coordinates.",
+  "power.origins-es.tpmarksave.name": "[+]Save TP Mark",
+  "power.origins-es.tpmarksave.description": "save your tp mark. if you sneaking it will save your targeted entity if you not it will save your coordinates.",
 
-  "power.origins-es.tptotpmark.name": "[+]TP to TP Mark",
-  "power.origins-es.tptotpmark.description": "tp you to your tp mark. if you sneaking it will tp you to your saved entity if you not it will tp you to your saved coordinates. difficult: +20",
+  "power.origins-es.tpmarkgo.name": "[+]TP to TP Mark",
+  "power.origins-es.tpmarkgo.description": "tp you to your tp mark. if you sneaking it will tp you to your saved entity if you not it will tp you to your saved coordinates. difficult: +20",
 
   "power.origins-es.shield_crush.name": "[+]Crush Shield!",
-  "power.origins-es.shield_crush.description": "Hit on opponents shield will in moment crush it and hit again. difficult: +5"
+  "power.origins-es.shield_crush.description": "Hit on opponents shield will in moment crush it and hit again. difficult: +5",
+
+  "power.origins-es.lightbulb.name": "[+-]Light-bulb?",
+  "power.origins-es.lightbulb.description": "Being a literal glowing blob of light makes you an easy target to spot, but in return, your gaze pierces the darkness just as easily, outlining every creature in your sight. difficult: -5",
+
+  "power.origins-es.nyctophobia.name": "[-]Nyctophobia",
+  "power.origins-es.nyctophobia.description": "Accustomed to the light, you fear the darkness. Darkness makes you weak and slow. difficult: -15",
+
+  "power.origins-es.energy-consuming.name": "[-]Energy Consumption",
+  "power.origins-es.energy-consuming.description": "You use your energy too wastefully, so you get hungry much faster than an ordinary person(in 5 times). difficult: -10",
+
+  "power.origins-es.favtoy.name": "[+]Favourite toy",
+  "power.origins-es.favtoy.description": "You have mastered your favorite toy so thoroughly that you can recreate its core mechanism and its most powerful wind enchantment. difficult: +20",
+
+  "power.origins-es.invertytoggle.name": "[+]Invert Y",
+  "power.origins-es.invertytoggle.description": "When the ability is on and you almost fell to the ground your Y velocity multiplies on ~-1,2 but it will spend wind charge`s in your inventory. difficult: +25",
+
+  "power.origins-es.invertylogic.name": "inverty2",
+  "power.origins-es.invertylogic.description": "for some reasons i need to split ineverty in to 2 filles ignore this",
+
+  "power.origins-es.fallsave.name": "[+]fall save",
+  "power.origins-es.fallsave.description": "any blob never scared to fall. difficult: +15"
 
 }

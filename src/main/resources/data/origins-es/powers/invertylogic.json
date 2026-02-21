@@ -1,0 +1,11 @@
+{
+  "type": "apoli:action_over_time",
+  "interval": 1,
+  "entity_action": {
+    "type": "origins-es:invert-y"
+  },
+  "condition": {
+    "type": "apoli:power_active",
+    "power": "origins-es:invertytoggle"
+  }
+}

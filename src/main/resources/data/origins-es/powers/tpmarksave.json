@@ -1,0 +1,10 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins-es:tpmarksave"
+  },
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "cooldown": 20
+}

@@ -1,7 +1,7 @@
 {
   "powers": [
-    "origins-es:savetpmark",
-    "origins-es:tptotpmark",
+    "origins-es:tpmarksave",
+    "origins-es:tpmarkgo",
     "origins-es:rtppoting",
     "origins-es:blind"
   ],

@@ -1,6 +1,6 @@
 package yud0o0.main.mixin;
 
-import io.github.apace100.apoli.component.PowerHolderComponent;
+import io.github.apace100.apoli.power.Power;
 import io.github.apace100.apoli.power.PowerManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,9 +16,8 @@ public class MaceShieldMixin {
 	@Inject(method = "attack", at = @At("HEAD"))
 	private void onAttack(Entity target, CallbackInfo ci) {
 		PlayerEntity attacker = (PlayerEntity) (Object) this;
-		Identifier powerId = Identifier.of("origins-es", "shield_crush");
-		boolean hasPower = PowerHolderComponent.hasPowerType(attacker, PowerManager.get(powerId).getType().getClass());
-		if (hasPower && attacker.getMainHandStack().isOf(Items.MACE)) {
+		Power power = PowerManager.get(Identifier.of("origins-es", "shield_crush"));
+		if (power.isActive(attacker) && attacker.getMainHandStack().isOf(Items.MACE)) {
 			if (target instanceof PlayerEntity victim) {
 				if (victim.isBlocking()) {
 					victim.getItemCooldownManager().set(victim.getActiveItem().getItem(), 100);

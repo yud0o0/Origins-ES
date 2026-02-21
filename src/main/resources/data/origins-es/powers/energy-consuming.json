@@ -1,0 +1,7 @@
+{
+  "type": "apoli:modify_exhaustion",
+  "modifier": {
+    "operation": "apoli:multiply_base_multiplicative",
+    "amount": 4.0
+  }
+}

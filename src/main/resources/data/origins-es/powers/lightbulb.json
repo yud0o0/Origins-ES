@@ -1,0 +1,63 @@
+{
+  "type": "apoli:multiple",
+  "glow_all": {
+    "type": "apoli:entity_glow",
+    "id": "origins-es:lightbulb/glow_all",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        { "type": "apoli:can_see" },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:nbt",
+            "inverted": true,
+            "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins-es:yud0o0\"}]}}}"
+          }
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:nbt",
+            "inverted": true,
+            "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins-es:mr_white_____\"}]}}}"
+          }
+        }
+      ]
+    },
+    "red": 1.0,
+    "green": 0.0,
+    "blue": 0.0
+  },
+  "glow_special": {
+    "type": "apoli:entity_glow",
+    "id": "origins-es:lightbulb/glow_special",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        { "type": "apoli:can_see" },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:nbt",
+            "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins-es:yud0o0\"}]}}}"
+          }
+        }
+      ]
+    },
+    "red": 0.1,
+    "green": 0.3,
+    "blue": 1.0
+  },
+  "glow_self": {
+    "type": "apoli:self_glow",
+    "id": "origins-es:lightbulb/glow_self",
+    "bientity_condition": {
+      "type": "apoli:can_see"
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 1.0,
+    "blue": 1.0
+  }
+}

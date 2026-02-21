@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:breeze_rod" },
+    { "item": "minecraft:blaze_rod" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "origins-es:obsidian_rod"
+  }
+}

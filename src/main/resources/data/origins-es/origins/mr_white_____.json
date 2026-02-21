@@ -1,6 +1,13 @@
 {
   "powers": [
-    "origins-es:shield_crush"
+    "origins-es:invertytoggle",
+    "origins-es:shield_crush",
+    "origins-es:favtoy",
+    "origins-es:fallsave",
+    "origins-es:lightbulb",
+    "origins-es:nyctophobia",
+    "origins-es:energy-consuming",
+    "origins-es:invertylogic"
   ],
   "icon": {
     "id": "minecraft:mace"

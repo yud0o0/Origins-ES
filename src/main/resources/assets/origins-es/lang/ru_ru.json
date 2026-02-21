@@ -4,10 +4,11 @@
 
   "item.origins-es.heart": "Сердце",
   "item.origins-es.heartbox": "Ящик Жизни",
-  "item.origins-es.heartshard": "Осколок сердца",
+  "item.origins-es.heartshard": "Осколок Сердца",
   "item.origins-es.lifestealer": "LifeStealer",
   "item.origins-es.rtpingredientsbag1": "Мешочек ингредиентов зелья рандомной телепортации I уровня",
   "item.origins-es.rtpingredientsbag2": "Мешочек ингредиентов зелья рандомной телепортации II уровня",
+  "item.origins-es.obsidian_rod": "Стержень Обсидиана",
 
   "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
 
@@ -24,7 +25,7 @@
   "__RACES__": "---------------- РАСЫ ----------------",
 
   "origin.origins-es.koj428.description": "кто эт нах? Сложность: +5",
-  "origin.origins-es.mr_white_____.description": "прост белый чел с такими же белыми... неважно. Сложность: +50(нужно забалансить)",
+  "origin.origins-es.mr_white_____.description": "прост белый чел с такими же белыми... неважно. Сложность: +10",
   "origin.origins-es.yud0o0.description": "",
 
   "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
@@ -32,16 +33,37 @@
   "power.origins-es.rtppoting.name": "[+]Настойка деда",
   "power.origins-es.rtppoting.description": "Вы переняли знания своего деда о варке лучших настоек что позволяет вам сделать мешочки ингредиентов для зелья случайной телепортации и абсолютного зелья случайной телепортации. Сложность: +20",
 
-  "power.origins-es.blind.name": "[-]слепой",
+  "power.origins-es.blind.name": "[-]Слепой",
   "power.origins-es.blind.description": "твоё зрение это пиздец, бро. Сложность: -35",
 
-  "power.origins-es.savetpmark.name": "[+]Сохранить метку телепортации",
-  "power.origins-es.savetpmark.description": "Сохраняет вашу точку телепортации. Если вы крадетесь — целью станет существо, на которое вы смотрите. Если нет — будут сохранены ваши текущие координаты.",
+  "power.origins-es.tpmarksave.name": "[+]Сохранить метку телепортации",
+  "power.origins-es.tpmarksave.description": "Сохраняет вашу точку телепортации. Если вы крадетесь — целью станет существо, на которое вы смотрите. Если нет — будут сохранены ваши текущие координаты.",
 
-  "power.origins-es.tptotpmark.name": "[+]Телепортироваться к метке телепортации",
-  "power.origins-es.tptotpmark.description": "Переносит вас к сохраненной метке. Если вы крадетесь — вы перенесетесь к сохраненному существу. Если нет — вы переместитесь по сохраненным координатам. Сложность: +20",
+  "power.origins-es.tpmarkgo.name": "[+]Телепортироваться к метке телепортации",
+  "power.origins-es.tpmarkgo.description": "Переносит вас к сохраненной метке. Если вы крадетесь — вы перенесетесь к сохраненному существу. Если нет — вы переместитесь по сохраненным координатам. Сложность: +20",
 
   "power.origins-es.shield_crush.name": "[+]Пробить Щит!",
-  "power.origins-es.shield_crush.description": "Удар булавой об щит противника пробивает щит и после срабатывает второй раз. Сложность: +5"
+  "power.origins-es.shield_crush.description": "Удар булавой об щит противника пробивает щит и после срабатывает второй раз. Сложность: +5",
+
+  "power.origins-es.lightbulb.name": "[+-]Светящийся-шарик?",
+  "power.origins-es.lightbulb.description": "Будучи настоящим светящимся шариком, вас легко заметить издалека, но в ответ ваш взор так же легко пронзает тьму, подсвечивая контуры всех существ в поле зрения. Сложность: -5",
+
+  "power.origins-es.nyctophobia.name": "[-]Никтофобия",
+  "power.origins-es.nyctophobia.description": "Привыкнув к свету, вы боитесь темноты. В тени вы съёживаетесь. Сложность: -20",
+
+  "power.origins-es.energy-consuming.name": "[-]Энергозатратность",
+  "power.origins-es.energy-consuming.description": "Вы слишком расточительно расходуете свою энергию, поэтому проголодаетесь гораздо быстрее обычного человека(в 5 раз). Сложность: -30",
+
+  "power.origins-es.favtoy.name": "[+]Любимая игрушка",
+  "power.origins-es.favtoy.description": "Вы настолько досконально изучили свою любимую игрушку, что способны воссоздать её ключевой механизм и наложить мощнейшее зачарование ветра. Сложность: +20",
+
+  "power.origins-es.invertytoggle.name": "[+]Инверсия Y",
+  "power.origins-es.invertytoggle.description": "Когда способность активна и вы почти коснулись земли, ваша вертикальная скорость (Y) умножается на ~-1,2, но при этом расходуются заряды ветра из инвентаря. Сложность: +25",
+
+  "power.origins-es.invertylogic.name": "inverty2",
+  "power.origins-es.invertylogic.description": "по определенным причинам мне нужно разделить inverty на два файла не обращай внимание",
+
+  "power.origins-es.fallsave.name": "[+]Безопасное падение",
+  "power.origins-es.fallsave.description": "ни один блёб не боится падать. сложность: +15"
 
 }

@@ -4,6 +4,7 @@
     "type": "origins:recipe",
     "recipe": {
       "type": "minecraft:crafting_shaped",
+      "group": "rtpbags",
       "id": "origins-es:rtppoting/rtp_bag1",
       "pattern": [
         "C",
@@ -23,6 +24,7 @@
     "type": "origins:recipe",
     "recipe": {
       "type": "minecraft:crafting_shaped",
+      "group": "rtpbags",
       "id": "origins-es:rtppoting/rtp_bag2",
       "pattern": [
         " D ",

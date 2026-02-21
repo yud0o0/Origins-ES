@@ -39,12 +39,12 @@ public class ESItems {
 
         @Override
         public TagKey<Block> getInverseTag() {
-            return BlockTags.INCORRECT_FOR_IRON_TOOL;
+            return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
         }
 
         @Override
         public int getEnchantability() {
-            return 67;
+            return 100 ;
         }
 
         @Override
@@ -55,7 +55,7 @@ public class ESItems {
     public static final Item LIFESTEALER =
             new SwordItem(
                     LIFE,
-                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(LIFE, 2, -3)).rarity(Rarity.EPIC)
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(LIFE, 2, -1.8f)).rarity(Rarity.EPIC)
                     );
     public static final Potion RTPPOT =
             new Potion(
@@ -69,6 +69,8 @@ public class ESItems {
             new Item(new Item.Settings().rarity(Rarity.UNCOMMON));
     public static final Item RTPINGREDIENTSBAGII =
             new Item(new Item.Settings().rarity(Rarity.EPIC));
+    public static final Item OBSIDIAN_ROD =
+            new Item(new Item.Settings().rarity(Rarity.RARE));
 
     public static void register() {
         Registry.register(
@@ -100,6 +102,11 @@ public class ESItems {
                 Registries.ITEM,
                 Identifier.of("origins-es", "rtpingredientsbag2"),
                 RTPINGREDIENTSBAGII
+        );
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of("origins-es", "obsidian_rod"),
+                OBSIDIAN_ROD
         );
     }
 }
