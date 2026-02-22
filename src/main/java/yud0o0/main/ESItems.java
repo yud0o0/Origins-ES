@@ -11,14 +11,15 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import yud0o0.main.powers.passive.powers.ESHeartsPowers;
 
 import static yud0o0.main.OriginsES.RTP;
 
 public class ESItems {
     public static final Item HEARTBOX =
-            new Item(new Item.Settings().rarity(Rarity.EPIC));
+            new ESHeartsPowers.LifeLocatorItem(new Item.Settings().maxCount(1).rarity(Rarity.EPIC));
     public static final Item HEART =
-            new Item(new Item.Settings().rarity(Rarity.RARE));
+            new ESHeartsPowers.HeartItem(new Item.Settings().rarity(Rarity.RARE));
     public static final Item HEARTSHARD =
             new Item(new Item.Settings().rarity(Rarity.RARE));
     public static final ToolMaterial LIFE = new ToolMaterial() {

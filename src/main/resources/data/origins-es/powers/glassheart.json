@@ -1,0 +1,19 @@
+{
+  "type": "origins:recipe",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "SSS",
+      "SNS",
+      "SSS"
+    ],
+    "key": {
+      "S": { "item": "origins-es:heartshard" },
+      "N": { "item": "minecraft:netherite_ingot" }
+    },
+    "result": {
+      "id": "origins-es:heartbox",
+      "count": 1
+    }
+  }
+}

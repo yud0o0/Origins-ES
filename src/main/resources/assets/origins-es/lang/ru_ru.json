@@ -4,6 +4,7 @@
 
   "item.origins-es.heart": "Сердце",
   "item.origins-es.heartbox": "Ящик Жизни",
+  "tooltip.origins-es.life_locator.description": "Поместите голову игрока в левую руку, чтобы задать цель для отслеживания.",
   "item.origins-es.heartshard": "Осколок Сердца",
   "item.origins-es.lifestealer": "LifeStealer",
   "item.origins-es.rtpingredientsbag1": "Мешочек ингредиентов зелья рандомной телепортации I уровня",
@@ -26,7 +27,7 @@
 
   "origin.origins-es.koj428.description": "кто эт нах? Сложность: +5",
   "origin.origins-es.mr_white_____.description": "прост белый чел с такими же белыми... неважно. Сложность: +10",
-  "origin.origins-es.yud0o0.description": "",
+  "origin.origins-es.yud0o0.description": "Сложность: 0",
 
   "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
 
@@ -61,9 +62,34 @@
   "power.origins-es.invertytoggle.description": "Когда способность активна и вы почти коснулись земли, ваша вертикальная скорость (Y) умножается на ~-1,2, но при этом расходуются заряды ветра из инвентаря. Сложность: +25",
 
   "power.origins-es.invertylogic.name": "inverty2",
-  "power.origins-es.invertylogic.description": "по определенным причинам мне нужно разделить inverty на два файла не обращай внимание",
+  "power.origins-es.invertylogic.description": "По определенным причинам мне нужно разделить invertY на два файла не обращай внимание",
 
   "power.origins-es.fallsave.name": "[+]Безопасное падение",
-  "power.origins-es.fallsave.description": "ни один блёб не боится падать. сложность: +15"
+  "power.origins-es.fallsave.description": "Ни один блёб не боится падать. Сложность: +15",
+
+  "power.origins-es.glassheart.name": "[-]Стеклянное Сердце",
+  "power.origins-es.glassheart.description": "Когда ты умираешь ты теряешь жизнь если другой игрок убивает тебя на месте твоей смерти остается осколок сердца из него любой может скрафтить меч способный красть жизни но только ты знаешь как крафтить ящик способный сообщить местонахождение любого игрока. Сложность: -30",
+
+  "power.origins-es.godapple.name": "[+]Яблоко Нотча",
+  "power.origins-es.godapple.description": "Позволяет создавать яблоки нотча которые восстанавливают хп до 30(15 сердечек). Сложность: +15",
+
+  "power.origins-es.inventorystack.name": "[+]Стак",
+  "power.origins-es.inventorystack.description": "Все предметы в твоем инвентаре имеют максимальный стак 64(для предметов которые имеют максимальный стак 1/16). Сложность: +15",
+
+  "__MASSAGES__": "---------------- СООБЩЕНИЯ ----------------",
+
+  "chat.origins-es.info.more30": "Яблоко нотча не может дать тебе больше 15 сердец.",
+  "chat.origins-es.info.offhandheadtip": "Возьмите Локатор в правую руку, а Голову жертвы в левую.",
+  "chat.origins-es.info.radarprefix": "§c[Радар Душ] §fИгрок ",
+  "chat.origins-es.info.radarsuffix": " найден.",
+  "chat.origins-es.info.radarwrongsuffix": " сейчас не в сети или прячется.",
+  "chat.origins-es.info.heartbankick": "Вы были забанены: Ваши жизни закончились.",
+  "chat.origins-es.info.commandheartless": "У вас недостаточно сердец.",
+  "chat.origins-es.info.windchargeless": "Заряды ветра закончились!",
+  "chat.origins-es.info.tptarget_captured": "Цель захвачена!",
+  "chat.origins-es.info.tptarget_not_found": "Цель не найдена.",
+  "chat.origins-es.info.tphome_set": "Точка возврата установлена.",
+  "chat.origins-es.info.tphome_not_set": "Точка возврата не установлена!",
+  "chat.origins-es.info.tpfail_offline": "Цель не найдена или чанк не прогружен."
 
 }

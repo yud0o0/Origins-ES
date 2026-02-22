@@ -4,6 +4,7 @@
 
   "item.origins-es.heart": "Heart",
   "item.origins-es.heartbox": "Heart Box",
+  "tooltip.origins-es.life_locator.description": "take player head in off hand and use this item to find them.",
   "item.origins-es.heartshard": "Heart Shard",
   "item.origins-es.lifestealer": "LifeStealer",
   "item.origins-es.rtpingredientsbag1": "RTP Ingredient bag I",
@@ -26,7 +27,7 @@
 
   "origin.origins-es.koj428.description": "who the fck is this? difficult: +5",
   "origin.origins-es.mr_white_____.description": "white man with white... nevermind. difficult: +10",
-  "origin.origins-es.yud0o0.description": "",
+  "origin.origins-es.yud0o0.description": "difficult: 0",
 
   "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
 
@@ -37,10 +38,10 @@
   "power.origins-es.blind.description": "ur vision is so bad bro. difficult: -35",
 
   "power.origins-es.tpmarksave.name": "[+]Save TP Mark",
-  "power.origins-es.tpmarksave.description": "save your tp mark. if you sneaking it will save your targeted entity if you not it will save your coordinates.",
+  "power.origins-es.tpmarksave.description": "Save your tp mark. if you sneaking it will save your targeted entity if you not it will save your coordinates.",
 
   "power.origins-es.tpmarkgo.name": "[+]TP to TP Mark",
-  "power.origins-es.tpmarkgo.description": "tp you to your tp mark. if you sneaking it will tp you to your saved entity if you not it will tp you to your saved coordinates. difficult: +20",
+  "power.origins-es.tpmarkgo.description": "Tp you to your tp mark. if you sneaking it will tp you to your saved entity if you not it will tp you to your saved coordinates. difficult: +20",
 
   "power.origins-es.shield_crush.name": "[+]Crush Shield!",
   "power.origins-es.shield_crush.description": "Hit on opponents shield will in moment crush it and hit again. difficult: +5",
@@ -52,7 +53,7 @@
   "power.origins-es.nyctophobia.description": "Accustomed to the light, you fear the darkness. Darkness makes you weak and slow. difficult: -15",
 
   "power.origins-es.energy-consuming.name": "[-]Energy Consumption",
-  "power.origins-es.energy-consuming.description": "You use your energy too wastefully, so you get hungry much faster than an ordinary person(in 5 times). difficult: -10",
+  "power.origins-es.energy-consuming.description": "You use your energy too wastefully, so you get hungry much faster than an ordinary person(in 5 times). difficult: -30",
 
   "power.origins-es.favtoy.name": "[+]Favourite toy",
   "power.origins-es.favtoy.description": "You have mastered your favorite toy so thoroughly that you can recreate its core mechanism and its most powerful wind enchantment. difficult: +20",
@@ -61,9 +62,34 @@
   "power.origins-es.invertytoggle.description": "When the ability is on and you almost fell to the ground your Y velocity multiplies on ~-1,2 but it will spend wind charge`s in your inventory. difficult: +25",
 
   "power.origins-es.invertylogic.name": "inverty2",
-  "power.origins-es.invertylogic.description": "for some reasons i need to split ineverty in to 2 filles ignore this",
+  "power.origins-es.invertylogic.description": "For some reasons i need to split invertY in to 2 files ignore this",
 
-  "power.origins-es.fallsave.name": "[+]fall save",
-  "power.origins-es.fallsave.description": "any blob never scared to fall. difficult: +15"
+  "power.origins-es.fallsave.name": "[+]Fall save",
+  "power.origins-es.fallsave.description": "Any blob never scared to fall. difficult: +15",
+
+  "power.origins-es.glassheart.name": "[-]Glass Heart",
+  "power.origins-es.glassheart.description": "When you die, you lose a life. If killed by another player, a Heart Shard is left at your death location. Anyone can use it to craft a Lifesteal Sword, but only you know how to craft a Crate capable of revealing any player's location. difficult: -30",
+
+  "power.origins-es.godapple.name": "[+]God Apple",
+  "power.origins-es.godapple.description": "Allows you to craft Enchanted Golden Apples that can restore your max health up to 30 HP (15 hearts). difficult: +15",
+
+  "power.origins-es.inventorystack.name": "[+]Inventory Stack",
+  "power.origins-es.inventorystack.description": "All items in your inventory has 64 max stack(for items that hax 1/16 max stack). difficult: +15",
+
+  "__MASSAGES__": "---------------- СООБЩЕНИЯ ----------------",
+
+  "chat.origins-es.info.more30": "God Apple can't give you more than you have.",
+  "chat.origins-es.info.offhandheadtip": "Hold the Locator in your right hand and the Victim's Head in your left.",
+  "chat.origins-es.info.radarprefix": "§c[Soul Radar] §fPlayer ",
+  "chat.origins-es.info.radarsuffix": " found.",
+  "chat.origins-es.info.radarwrongsuffix": " is currently offline or hiding.",
+  "chat.origins-es.info.heartbankick": "You have been banned: Your lives have run out.",
+  "chat.origins-es.info.commandheartless": "You don't have enough hearts to extract.",
+  "chat.origins-es.info.windchargeless": "Wind Charges are over!",
+  "chat.origins-es.info.tptarget_captured": "Target captured!",
+  "chat.origins-es.info.tptarget_not_found": "Target not found.",
+  "chat.origins-es.info.tphome_set": "Return point set.",
+  "chat.origins-es.info.tphome_not_set": "Return point not set!",
+  "chat.origins-es.info.tpfail_offline": "Target not found or chunk not loaded."
 
 }

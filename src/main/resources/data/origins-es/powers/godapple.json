@@ -1,0 +1,19 @@
+{
+  "type": "origins:recipe",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "GGG",
+      "GSG",
+      "GGG"
+    ],
+    "key": {
+      "G": { "item": "minecraft:gold_block" },
+      "S": { "item": "minecraft:nautilus_shell" }
+    },
+    "result": {
+      "id": "minecraft:enchanted_golden_apple",
+      "count": 1
+    }
+  }
+}

@@ -1,5 +1,9 @@
 {
-  "powers": [],
+  "powers": [
+    "origins-es:godapple",
+    "origins-es:inventorystack",
+    "origins-es:glassheart"
+  ],
   "icon": {
     "id": "origins-es:heart"
   },

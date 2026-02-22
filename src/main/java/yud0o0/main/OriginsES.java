@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import yud0o0.main.powers.action.ESEntityActionTypes;
+import yud0o0.main.powers.passive.ESPassivePowers;
 
 public class OriginsES implements ModInitializer {
 	public static final String MOD_ID = "origins-es";
@@ -47,6 +48,7 @@ public class OriginsES implements ModInitializer {
 	public void onInitialize() {
 		ESEntityActionTypes.register();
 		ESItems.register();
+		ESPassivePowers.register();
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
 			content.addAfter(Items.NETHER_STAR, ESItems.HEARTBOX, ESItems.HEART, ESItems.HEARTSHARD, ESItems.RTPINGREDIENTSBAGI, ESItems.RTPINGREDIENTSBAGII);
 		});

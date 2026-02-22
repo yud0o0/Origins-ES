@@ -16,6 +16,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.Heightmap;
@@ -39,8 +40,8 @@ public class ESPhysicsActions {
 
             if (living instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
                 if (!player.getInventory().contains(Items.WIND_CHARGE.getDefaultStack())) {
-                    if (living.getWorld().getTime() % 40 == 0) { // Пишем не так часто
-                        player.sendMessage(Text.of("§cЗаряды ветра закончились!"), true);
+                    if (living.getWorld().getTime() % 40 == 0) {
+                        player.sendMessage(Text.translatable("").formatted(Formatting.RED), true);
                     }
                     return;
                 }
