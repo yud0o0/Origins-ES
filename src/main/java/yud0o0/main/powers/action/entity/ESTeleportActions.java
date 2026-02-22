@@ -11,6 +11,7 @@ import net.minecraft.entity.projectile.ProjectileUtil;
 import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Box;
@@ -44,7 +45,7 @@ public class ESTeleportActions {
         public static final TypedDataObjectFactory<SaveMarkAction> DATA_FACTORY = TypedDataObjectFactory.simple(
                 new SerializableData(),
                 data -> new SaveMarkAction(),
-                (action, data) -> data.instance() // Вот так IDE будет довольна
+                (action, data) -> data.instance()
         );
 
         @Override
@@ -57,15 +58,15 @@ public class ESTeleportActions {
                 Entity target = getTargetEntity(player, 12);
                 if (target != null) {
                     storage.setTargetUuid(target.getUuid());
-                    player.sendMessage(Text.translatable("chat.origins-es.tp.target_captured"), true);
+                    player.sendMessage(Text.translatable("chat.origins-es.info.tptarget_captured").formatted(Formatting.GREEN), true);
                 } else {
-                    player.sendMessage(Text.translatable("chat.origins-es.tp.target_not_found"), true);
+                    player.sendMessage(Text.translatable("chat.origins-es.info.tptarget_not_found").formatted(Formatting.RED), true);
                 }
             } else {
                 String dim = player.getWorld().getRegistryKey().getValue().getPath();
                 GlobalPos pos = GlobalPos.create(player.getWorld().getRegistryKey(), player.getBlockPos());
                 storage.setHome(dim, pos);
-                player.sendMessage(Text.translatable("chat.origins-es.tp.home_set"), true);
+                player.sendMessage(Text.translatable("chat.origins-es.info.tphome_set").formatted(Formatting.GREEN), true);
             }
         }
 
@@ -78,7 +79,7 @@ public class ESTeleportActions {
     public static class GoToMarkAction extends EntityActionType {
         public static final TypedDataObjectFactory<GoToMarkAction> DATA_FACTORY = TypedDataObjectFactory.simple(
                 new SerializableData(),
-                data -> new GoToMarkAction(), // И тут создаем GoToMarkAction, а не SaveMarkAction
+                data -> new GoToMarkAction(),
                 (action, data) -> data.instance()
         );
 
@@ -97,7 +98,7 @@ public class ESTeleportActions {
                         return;
                     }
                 }
-                player.sendMessage(Text.translatable("chat.origins-es.tp.fail_offline"), false);
+                player.sendMessage(Text.translatable("chat.origins-es.info.tpfail_offline").formatted(Formatting.RED), false);
             } else {
                 GlobalPos globalPos = storage.getHome(player.getWorld().getRegistryKey().getValue().getPath());
                 if (globalPos != null) {
@@ -106,7 +107,7 @@ public class ESTeleportActions {
                         player.teleport(targetWorld, globalPos.pos().getX() + 0.5, globalPos.pos().getY(), globalPos.pos().getZ() + 0.5, player.getYaw(), player.getPitch());
                     }
                 } else {
-                    player.sendMessage(Text.translatable("chat.origins-es.tp.home_not_set"), false);
+                    player.sendMessage(Text.translatable("chat.origins-es.info.tphome_not_set").formatted(Formatting.RED), false);
                 }
             }
         }
