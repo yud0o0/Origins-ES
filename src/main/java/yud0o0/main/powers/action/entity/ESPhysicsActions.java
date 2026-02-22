@@ -4,6 +4,7 @@ import io.github.apace100.apoli.action.ActionConfiguration;
 import io.github.apace100.apoli.action.context.EntityActionContext;
 import io.github.apace100.apoli.action.type.EntityActionType;
 import io.github.apace100.apoli.data.TypedDataObjectFactory;
+import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.calio.data.SerializableData;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -17,6 +18,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.Heightmap;
@@ -41,7 +43,7 @@ public class ESPhysicsActions {
             if (living instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
                 if (!player.getInventory().contains(Items.WIND_CHARGE.getDefaultStack())) {
                     if (living.getWorld().getTime() % 40 == 0) {
-                        player.sendMessage(Text.translatable("").formatted(Formatting.RED), true);
+                        player.sendMessage(Text.translatable("chat.origins-es.info.windchargeless").formatted(Formatting.RED), true);
                     }
                     return;
                 }
@@ -92,7 +94,7 @@ public class ESPhysicsActions {
 
         @Override
         public @NotNull ActionConfiguration<?> getConfig() {
-            return ESEntityActionTypes.INVERT_Y;
+            return ApoliRegistries.ENTITY_ACTION_TYPE.get(Identifier.of("origins-es", "invert-y"));
         }
     }
 }

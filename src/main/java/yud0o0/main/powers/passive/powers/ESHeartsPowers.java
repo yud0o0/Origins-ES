@@ -188,7 +188,7 @@ public class ESHeartsPowers {
                     new Date(),
                     "Server",
                     null,
-                    Text.translatable("chat.origins-es.info.heartbankick").toString()
+                    "You have been banned: Your lives have run out."
             );
 
             banList.add(entry);

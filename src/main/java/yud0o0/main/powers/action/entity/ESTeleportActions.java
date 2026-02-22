@@ -11,7 +11,6 @@ import net.minecraft.entity.projectile.ProjectileUtil;
 import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Box;
@@ -32,21 +31,20 @@ public class ESTeleportActions {
     public static void register() {
         registerAction(SAVE_MARK_ID, SaveMarkAction.DATA_FACTORY);
         registerAction(GO_TO_MARK_ID, GoToMarkAction.DATA_FACTORY);
+
+        registerAction(Identifier.of(OriginsES.MOD_ID, "invert-y"), ESPhysicsActions.InvertYAction.DATA_FACTORY);
     }
 
     private static <T extends EntityActionType> void registerAction(Identifier id, TypedDataObjectFactory<T> factory) {
         ActionConfiguration<T> config = ActionConfiguration.of(id, factory);
-
-        ActionConfiguration<EntityActionType> castedConfig = (ActionConfiguration<EntityActionType>) config;
-
-        Registry.register(ApoliRegistries.ENTITY_ACTION_TYPE, id, castedConfig);
+        Registry.register((Registry<ActionConfiguration<EntityActionType>>) (Object) ApoliRegistries.ENTITY_ACTION_TYPE, id, (ActionConfiguration<EntityActionType>) (Object) config);
     }
 
     public static class SaveMarkAction extends EntityActionType {
         public static final TypedDataObjectFactory<SaveMarkAction> DATA_FACTORY = TypedDataObjectFactory.simple(
                 new SerializableData(),
                 data -> new SaveMarkAction(),
-                (type, data) -> data.instance()
+                (action, data) -> data.instance() // Вот так IDE будет довольна
         );
 
         @Override
@@ -59,29 +57,29 @@ public class ESTeleportActions {
                 Entity target = getTargetEntity(player, 12);
                 if (target != null) {
                     storage.setTargetUuid(target.getUuid());
-                    player.sendMessage(Text.translatable("chat.origins-es.info.tptarget_captured").formatted(Formatting.GREEN), true);
+                    player.sendMessage(Text.translatable("chat.origins-es.tp.target_captured"), true);
                 } else {
-                    player.sendMessage(Text.translatable("chat.origins-es.info.tptarget_not_found").formatted(Formatting.RED), true);
+                    player.sendMessage(Text.translatable("chat.origins-es.tp.target_not_found"), true);
                 }
             } else {
                 String dim = player.getWorld().getRegistryKey().getValue().getPath();
                 GlobalPos pos = GlobalPos.create(player.getWorld().getRegistryKey(), player.getBlockPos());
                 storage.setHome(dim, pos);
-                player.sendMessage(Text.translatable("chat.origins-es.info.tphome_set").formatted(Formatting.GREEN), true);
+                player.sendMessage(Text.translatable("chat.origins-es.tp.home_set"), true);
             }
         }
 
         @Override
         public @NotNull ActionConfiguration<?> getConfig() {
-            return ActionConfiguration.of(SAVE_MARK_ID, DATA_FACTORY);
+            return ApoliRegistries.ENTITY_ACTION_TYPE.get(SAVE_MARK_ID);
         }
     }
 
     public static class GoToMarkAction extends EntityActionType {
         public static final TypedDataObjectFactory<GoToMarkAction> DATA_FACTORY = TypedDataObjectFactory.simple(
                 new SerializableData(),
-                data -> new GoToMarkAction(),
-                (type, data) -> data.instance()
+                data -> new GoToMarkAction(), // И тут создаем GoToMarkAction, а не SaveMarkAction
+                (action, data) -> data.instance()
         );
 
         @Override
@@ -99,7 +97,7 @@ public class ESTeleportActions {
                         return;
                     }
                 }
-                player.sendMessage(Text.translatable("chat.origins-es.info.tpfail_offline").formatted(Formatting.RED), false);
+                player.sendMessage(Text.translatable("chat.origins-es.tp.fail_offline"), false);
             } else {
                 GlobalPos globalPos = storage.getHome(player.getWorld().getRegistryKey().getValue().getPath());
                 if (globalPos != null) {
@@ -108,14 +106,14 @@ public class ESTeleportActions {
                         player.teleport(targetWorld, globalPos.pos().getX() + 0.5, globalPos.pos().getY(), globalPos.pos().getZ() + 0.5, player.getYaw(), player.getPitch());
                     }
                 } else {
-                    player.sendMessage(Text.translatable("chat.origins-es.info.tphome_not_set").formatted(Formatting.RED), false);
+                    player.sendMessage(Text.translatable("chat.origins-es.tp.home_not_set"), false);
                 }
             }
         }
 
         @Override
         public @NotNull ActionConfiguration<?> getConfig() {
-            return ActionConfiguration.of(GO_TO_MARK_ID, DATA_FACTORY);
+            return ApoliRegistries.ENTITY_ACTION_TYPE.get(GO_TO_MARK_ID);
         }
     }
 
