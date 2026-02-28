@@ -3,9 +3,11 @@
 	"package": "yud0o0.main.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "MaceShieldMixin",
+		"DisOriginsGuiMixin",
 		"GodAppleMixin",
-		"InventoryStackMixin"
+		"InventoryStackMixin",
+		"MaceShieldMixin",
+		"TridentHarpoonMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

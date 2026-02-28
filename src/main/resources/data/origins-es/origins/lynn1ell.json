@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "origins-es:fish",
+    "origins-es:fishsfriends",
+    "origins-es:harpoon",
+    "origins-es:seaorbs",
+    "origins:aquatic",
+    "origins:conduit_power_on_land",
+    "origins:air_from_potions"
+  ],
+  "icon": {
+    "id": "minecraft:tropical_fish"
+  },
+  "order": 3,
+  "impact": 2,
+  "name": "Lynn1ell"
+}

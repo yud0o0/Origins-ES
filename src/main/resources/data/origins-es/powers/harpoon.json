@@ -1,0 +1,29 @@
+{
+  "type": "origins:recipe",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " AS",
+      "NOA",
+      "TN "
+    ],
+    "key": {
+      "T": { "item": "minecraft:trident" },
+      "O": { "item": "origins-es:obsidian_rod" },
+      "S": { "item": "minecraft:cobweb" },
+      "A": { "item": "minecraft:amethyst_shard" },
+      "N": { "item": "minecraft:netherite_scrap" }
+    },
+    "result": {
+      "id": "minecraft:trident",
+      "components": {
+        "minecraft:enchantments": {
+          "levels": {
+            "origins-es:harpoon": 1
+          }
+        },
+        "minecraft:item_name": "{\"text\":\"Гарпун\",\"color\":\"aqua\"}"
+      }
+    }
+  }
+}

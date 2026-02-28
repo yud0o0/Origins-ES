@@ -1,5 +1,7 @@
 {
 
+  "enchantment.origins-es.harpoon": "Harpoon",
+
   "__ITEMS__": "---------------- ПРЕДМЕТЫ ----------------",
 
   "item.origins-es.heart": "Heart",
@@ -10,6 +12,8 @@
   "item.origins-es.rtpingredientsbag1": "RTP Ingredient bag I",
   "item.origins-es.rtpingredientsbag2": "RTP Ingredient bag II",
   "item.origins-es.obsidian_rod": "Obsidian Rod",
+  "item.origins-es.water_bomb": "Water Bomb",
+  "item.origins-es.nimbus": "Nimbus",
 
   "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
 
@@ -28,6 +32,7 @@
   "origin.origins-es.koj428.description": "who the fck is this? difficult: +5",
   "origin.origins-es.mr_white_____.description": "white man with white... nevermind. difficult: +10",
   "origin.origins-es.yud0o0.description": "difficult: 0",
+  "origin.origins-es.lynn1ell.description": "fish. Сложность: +5",
 
   "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
 
@@ -76,6 +81,18 @@
   "power.origins-es.inventorystack.name": "[+]Inventory Stack",
   "power.origins-es.inventorystack.description": "All items in your inventory has 64 max stack(for items that hax 1/16 max stack). difficult: +15",
 
+  "power.origins-es.fish.name": "[-]Fish",
+  "power.origins-es.fish.description": "you have all powers like original merling from origins. difficult: -20",
+
+  "power.origins-es.fishsfriends.name": "[+]Fish — Friends?",
+  "power.origins-es.fishsfriends.description": "you have immunity to elder guardians poison. difficult: +5",
+
+  "power.origins-es.harpoon.name": "[+]Harpoon",
+  "power.origins-es.harpoon.description": "you have knowledge to create sea harpoons. difficult: +10",
+
+  "power.origins-es.seaorbs.name": "[+]Sea Orbs",
+  "power.origins-es.seaorbs.description": "you have knowledge to create sea orbs(Water bombs, Nimbus's) and some sea things that cant be crafted by other players. sea orbs can help you to survive on land. difficult: +10",
+
   "__MASSAGES__": "---------------- СООБЩЕНИЯ ----------------",
 
   "chat.origins-es.info.more30": "God Apple can't give you more than you have.",
@@ -90,6 +107,7 @@
   "chat.origins-es.info.tptarget_not_found": "Target not found.",
   "chat.origins-es.info.tphome_set": "Return point set.",
   "chat.origins-es.info.tphome_not_set": "Return point not set!",
-  "chat.origins-es.info.tpfail_offline": "Target not found or chunk not loaded."
+  "chat.origins-es.info.tpfail_offline": "Target not found or chunk not loaded.",
+  "chat.origins-es.info.arained": "It's already raining!"
 
 }

@@ -1,5 +1,7 @@
 {
 
+  "enchantment.origins-es.harpoon": "Гарпун",
+
   "__ITEMS__": "---------------- ПРЕДМЕТЫ ----------------",
 
   "item.origins-es.heart": "Сердце",
@@ -28,6 +30,7 @@
   "origin.origins-es.koj428.description": "кто эт нах? Сложность: +5",
   "origin.origins-es.mr_white_____.description": "прост белый чел с такими же белыми... неважно. Сложность: +10",
   "origin.origins-es.yud0o0.description": "Сложность: 0",
+  "origin.origins-es.lynn1ell.description": "ріба. Сложность: +5",
 
   "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
 
@@ -76,6 +79,18 @@
   "power.origins-es.inventorystack.name": "[+]Стак",
   "power.origins-es.inventorystack.description": "Все предметы в твоем инвентаре имеют максимальный стак 64(для предметов которые имеют максимальный стак 1/16). Сложность: +15",
 
+  "power.origins-es.fish.name": "[-]Ріба",
+  "power.origins-es.fish.description": "Вы имеете все те же способности как и оригинальная ріба из ориджинс. Сложность: -15",
+
+  "power.origins-es.fishsfriends.name": "[+]Рыбы — друзья?",
+  "power.origins-es.fishsfriends.description": "У вас иммунитет к яду Древних стражей. Сложность: +5",
+
+  "power.origins-es.harpoon.name": "[+]Гарпун",
+  "power.origins-es.harpoon.description": "Вы обладаете знанием о создании морских гарпунов. Сложность: +10",
+
+  "power.origins-es.seaorbs.name": "[+]Морские сферы",
+  "power.origins-es.seaorbs.description": "Вы знаете как создавать морские сферы(Водяные бомбы и Дождливые облака) и некоторые другие морские штучки которые не могут крафтить остальные игроки. Морские сферы могут помочь вам выжить на суше. Сложность: +5",
+
   "__MASSAGES__": "---------------- СООБЩЕНИЯ ----------------",
 
   "chat.origins-es.info.more30": "Яблоко нотча не может дать тебе больше 15 сердец.",
@@ -90,6 +105,7 @@
   "chat.origins-es.info.tptarget_not_found": "Цель не найдена.",
   "chat.origins-es.info.tphome_set": "Точка возврата установлена.",
   "chat.origins-es.info.tphome_not_set": "Точка возврата не установлена!",
-  "chat.origins-es.info.tpfail_offline": "Цель не найдена или чанк не прогружен."
+  "chat.origins-es.info.tpfail_offline": "Цель не найдена или чанк не прогружен.",
+  "chat.origins-es.info.arained": "Дождь уже идет!"
 
 }

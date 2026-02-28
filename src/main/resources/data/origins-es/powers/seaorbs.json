@@ -1,0 +1,133 @@
+{
+  "type": "apoli:multiple",
+  "water_bomb": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GWG",
+        "WwW",
+        "GWG"
+      ],
+      "key": {
+        "G": {
+          "item": "minecraft:glass"
+        },
+        "W": {
+          "item": "minecraft:water_bucket"
+        },
+        "w": {
+          "item": "minecraft:wind_charge"
+        }
+      },
+      "result": {
+        "id": "origins-es:water_bomb",
+        "count": 1
+      }
+    }
+  },
+  "nimbus": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GWG",
+        "WSW",
+        "GWG"
+      ],
+      "key": {
+        "G": {
+          "item": "minecraft:tinted_glass"
+        },
+        "W": {
+          "item": "origins-es:water_bomb"
+        },
+        "S": {
+          "item": "minecraft:heart_of_the_sea"
+        }
+      },
+      "result": {
+        "id": "origins-es:nimbus",
+        "count": 1
+      }
+    }
+  },
+  "heart_of_the_sea": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "DDD",
+        "DND",
+        "DDD"
+      ],
+      "key": {
+        "D": {
+          "item": "minecraft:diamond"
+        },
+        "N": {
+          "item": "minecraft:nautilus_shell"
+        }
+      },
+      "result": {
+        "id": "minecraft:heart_of_the_sea",
+        "count": 1
+      }
+    }
+  },
+  "nautilus_shell": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GCG",
+        "CPC",
+        "GCG"
+      ],
+      "key": {
+        "G": {
+          "item": "minecraft:gold_ingot"
+        },
+        "C": {
+          "item": "minecraft:copper_ingot"
+        },
+        "P": {
+          "item": "minecraft:prismarine_crystals"
+        }
+      },
+      "result": {
+        "id": "minecraft:nautilus_shell",
+        "count": 1
+      }
+    }
+  },
+  "trident": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PAA",
+        "SOA",
+        "OSP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "S": {
+          "item": "minecraft:heart_of_the_sea"
+        },
+        "A": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "O": {
+          "item": "origins-es:obsidian_rod"
+        }
+      },
+      "result": {
+        "id": "minecraft:trident",
+        "count": 1
+      }
+    }
+  }
+}

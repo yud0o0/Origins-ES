@@ -1,0 +1,12 @@
+{
+  "water_bomb_throw": {
+    "category": "player",
+    "subtitle": "subtitles.origins-es.water_bomb_throw",
+    "sounds": [ "origins-es:item/bomb_throw" ]
+  },
+  "water_bomb_explode": {
+    "category": "neutral",
+    "subtitle": "subtitles.origins-es.water_bomb_explode",
+    "sounds": [ "origins-es:item/bomb_explode" ]
+  }
+}
