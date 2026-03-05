@@ -1,0 +1,17 @@
+{
+  "type": "origins:recipe",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "bB"
+    ],
+    "key": {
+      "b": { "item": "minecraft:book" },
+      "B": { "item": "minecraft:bookshelf" }
+    },
+    "result": {
+      "id": "origins-es:tome",
+      "count": 1
+    }
+  }
+}

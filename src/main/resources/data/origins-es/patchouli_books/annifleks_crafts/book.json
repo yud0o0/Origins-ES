@@ -1,0 +1,9 @@
+{
+  "name": "item.origins-es.annifleks_crafts",
+  "landing_text": "origins-es.annifleks_crafts.landing",
+  "version": 1,
+  "show_progress": false,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "model": "origins-es:annifleks_crafts",
+  "use_resource_pack": true
+}

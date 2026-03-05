@@ -1,0 +1,53 @@
+{
+  "type": "apoli:multiple",
+  "annifleks_tome": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-es:annifleks_crafts_recipe",
+      "pattern": [
+        " G ",
+        "BPW",
+        " G "
+      ],
+      "key": {
+        "G": { "item": "minecraft:gold_ingot" },
+        "B": { "item": "minecraft:book" },
+        "P": { "item": "minecraft:feather" },
+        "W": { "item": "minecraft:ink_sac" }
+      },
+      "result": {
+        "id": "patchouli:guide_book",
+        "count": 1,
+        "components": {
+          "patchouli:book": "origins-es:annifleks_crafts"
+        }
+      }
+    }
+  },
+  "race_catalog": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-es:all_race_catalog_recipe",
+      "pattern": [
+        " A ",
+        "BPW",
+        " A "
+      ],
+      "key": {
+        "A": { "item": "minecraft:amethyst_shard" },
+        "B": { "item": "minecraft:book" },
+        "P": { "item": "minecraft:feather" },
+        "W": { "item": "minecraft:ink_sac" }
+      },
+      "result": {
+        "id": "patchouli:guide_book",
+        "count": 1,
+        "components": {
+          "patchouli:book": "origins-es:all_race_craft_catalog"
+        }
+      }
+    }
+  }
+}

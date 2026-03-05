@@ -1,0 +1,344 @@
+{
+  "type": "apoli:multiple",
+  "hidden": true,
+  "heavy_core": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-es:favtoy/heavy_core",
+      "pattern": [
+        "DRD",
+        "ONO",
+        "DRD"
+      ],
+      "key": {
+        "D": { "item": "minecraft:deepslate" },
+        "R": { "item": "minecraft:breeze_rod" },
+        "O": { "item": "minecraft:obsidian" },
+        "N": { "item": "minecraft:netherite_ingot" }
+      },
+      "result": {
+        "id": "minecraft:heavy_core",
+        "count": 1
+      }
+    }
+  },
+  "wind_burst1": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "wind_burst",
+      "id": "origins-es:favtoy/wind_burst1",
+      "ingredients": [
+        { "item": "minecraft:book" },
+        { "item": "minecraft:smithing_table" },
+        { "item": "minecraft:netherite_scrap" }
+      ],
+      "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+          "minecraft:stored_enchantments": {
+            "levels": {
+              "minecraft:wind_burst": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "wind_burst2": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "wind_burst",
+      "id": "origins-es:favtoy/wind_burst2",
+      "ingredients": [
+        { "item": "minecraft:book" },
+        { "item": "minecraft:smithing_table" },
+        { "item": "minecraft:netherite_scrap" },
+        { "item": "minecraft:netherite_ingot" }
+      ],
+      "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+          "minecraft:stored_enchantments": {
+            "levels": {
+              "minecraft:wind_burst": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "wind_burst3": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "wind_burst",
+      "id": "origins-es:favtoy/wind_burst3",
+      "ingredients": [
+        { "item": "minecraft:book" },
+        { "item": "minecraft:smithing_table" },
+        { "item": "minecraft:netherite_scrap" },
+        { "item": "minecraft:netherite_ingot" },
+        { "item": "minecraft:nether_star" }
+      ],
+      "result": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "components": {
+          "minecraft:stored_enchantments": {
+            "levels": {
+              "minecraft:wind_burst": 3
+            }
+          }
+        }
+      }
+    }
+  },
+  "glassheartrecipe": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "SNS",
+        "SSS"
+      ],
+      "key": {
+        "S": { "item": "origins-es:heartshard" },
+        "N": { "item": "minecraft:netherite_ingot" }
+      },
+      "result": {
+        "id": "origins-es:heartbox",
+        "count": 1
+      }
+    }
+  },
+  "godapplerecipe": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "GSG",
+        "GGG"
+      ],
+      "key": {
+        "G": { "item": "minecraft:gold_block" },
+        "S": { "item": "minecraft:nautilus_shell" }
+      },
+      "result": {
+        "id": "minecraft:enchanted_golden_apple",
+        "count": 1
+      }
+    }
+  },
+  "harpoon": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " AS",
+        "NOA",
+        "TN "
+      ],
+      "key": {
+        "T": { "item": "minecraft:trident" },
+        "O": { "item": "origins-es:obsidian_rod" },
+        "S": { "item": "minecraft:cobweb" },
+        "A": { "item": "minecraft:amethyst_shard" },
+        "N": { "item": "minecraft:netherite_scrap" }
+      },
+      "result": {
+        "id": "minecraft:trident",
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "origins-es:harpoon": 1
+            }
+          },
+          "minecraft:item_name": "{\"text\":\"Гарпун\",\"color\":\"aqua\"}"
+        }
+      }
+    }
+  },
+  "water_bomb": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GWG",
+        "WwW",
+        "GWG"
+      ],
+      "key": {
+        "G": {
+          "item": "minecraft:glass"
+        },
+        "W": {
+          "item": "minecraft:water_bucket"
+        },
+        "w": {
+          "item": "minecraft:wind_charge"
+        }
+      },
+      "result": {
+        "id": "origins-es:water_bomb",
+        "count": 1
+      }
+    }
+  },
+  "nimbus": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GWG",
+        "WSW",
+        "GWG"
+      ],
+      "key": {
+        "G": {
+          "item": "minecraft:tinted_glass"
+        },
+        "W": {
+          "item": "origins-es:water_bomb"
+        },
+        "S": {
+          "item": "minecraft:heart_of_the_sea"
+        }
+      },
+      "result": {
+        "id": "origins-es:nimbus",
+        "count": 1
+      }
+    }
+  },
+  "heart_of_the_sea": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "DDD",
+        "DND",
+        "DDD"
+      ],
+      "key": {
+        "D": {
+          "item": "minecraft:diamond"
+        },
+        "N": {
+          "item": "minecraft:nautilus_shell"
+        }
+      },
+      "result": {
+        "id": "minecraft:heart_of_the_sea",
+        "count": 1
+      }
+    }
+  },
+  "nautilus_shell": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GCG",
+        "CPC",
+        "GCG"
+      ],
+      "key": {
+        "G": {
+          "item": "minecraft:gold_ingot"
+        },
+        "C": {
+          "item": "minecraft:copper_ingot"
+        },
+        "P": {
+          "item": "minecraft:prismarine_crystals"
+        }
+      },
+      "result": {
+        "id": "minecraft:nautilus_shell",
+        "count": 1
+      }
+    }
+  },
+  "trident": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PAA",
+        "SOA",
+        "OSP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "S": {
+          "item": "minecraft:heart_of_the_sea"
+        },
+        "A": {
+          "item": "minecraft:amethyst_shard"
+        },
+        "O": {
+          "item": "origins-es:obsidian_rod"
+        }
+      },
+      "result": {
+        "id": "minecraft:trident",
+        "count": 1
+      }
+    }
+  },
+  "rtp_bag1": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "rtpbags",
+      "id": "origins-es:rtppoting/rtp_bag1",
+      "pattern": [
+        "C",
+        "B"
+      ],
+      "key": {
+        "B": { "item": "minecraft:leather" },
+        "C": { "item": "minecraft:chorus_fruit" }
+      },
+      "result": {
+        "id": "origins-es:rtpingredientsbag1",
+        "count": 1
+      }
+    }
+  },
+  "rtp_bag2": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "rtpbags",
+      "id": "origins-es:rtppoting/rtp_bag2",
+      "pattern": [
+        " D ",
+        "RSR",
+        " B "
+      ],
+      "key": {
+        "B": { "item": "minecraft:leather" },
+        "S": { "item": "minecraft:nether_star" },
+        "D": { "item": "minecraft:dragon_head" },
+        "R": { "item": "minecraft:end_crystal" }
+      },
+      "result": {
+        "id": "origins-es:rtpingredientsbag2",
+        "count": 1
+      }
+    }
+  }
+}

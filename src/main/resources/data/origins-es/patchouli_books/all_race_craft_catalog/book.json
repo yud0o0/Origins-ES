@@ -1,0 +1,9 @@
+{
+  "name": "item.origins-es.all_race_craft_catalog",
+  "landing_text": "origins-es.all_race_craft_catalog.landing",
+  "version": 1,
+  "show_progress": false,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "model": "origins-es:all_race_craft_catalog",
+  "use_resource_pack": true
+}

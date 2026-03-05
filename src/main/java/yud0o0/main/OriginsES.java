@@ -1,12 +1,19 @@
 package yud0o0.main;
 
+import com.mojang.serialization.Codec;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.component.ComponentType;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
+import net.minecraft.network.packet.CustomPayload;
 import net.minecraft.potion.Potion;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,6 +27,9 @@ import org.slf4j.LoggerFactory;
 
 import yud0o0.main.powers.action.ESEntityActionTypes;
 import yud0o0.main.powers.passive.ESPassivePowers;
+import yud0o0.main.tome.ESTomePayload;
+
+import java.util.List;
 
 public class OriginsES implements ModInitializer {
 	public static final String MOD_ID = "origins-es";
@@ -41,6 +51,25 @@ public class OriginsES implements ModInitializer {
 			new Potion(new StatusEffectInstance(RTP, 1, 1))
 	);
 
+	public static final ComponentType<List<String>> ACQUIRED_BOOKS = Registry.register(
+			Registries.DATA_COMPONENT_TYPE,
+			Identifier.of("origins-es", "acquired_books"),
+			ComponentType.<List<String>>builder()
+					.codec(Codec.STRING.listOf())
+					.packetCodec(PacketCodecs.STRING.collect(PacketCodecs.toList()))
+					.cache()
+					.build()
+	);
+
+	public static final ComponentType<String> ACTIVE_BOOK = Registry.register(
+			Registries.DATA_COMPONENT_TYPE,
+			Identifier.of("origins-es", "active_book"),
+			ComponentType.<String>builder()
+					.codec(Codec.STRING)
+					.packetCodec(PacketCodecs.STRING)
+					.build()
+	);
+
 	@Override
 	public void onInitialize() {
 		ESEntityActionTypes.register();
@@ -49,6 +78,7 @@ public class OriginsES implements ModInitializer {
 		ESItems.register();
 		ESPassivePowers.register();
 		if (FabricLoader.getInstance().getEnvironmentType() == EnvType.SERVER) {ESfck.register();}
+		ESTomePayload.register();
 		new ESCommands().init();
 		LOGGER.info("Origins-ES was instalized");
 

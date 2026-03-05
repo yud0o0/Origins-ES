@@ -15,12 +15,16 @@
 	"environment": "*",
 	"custom": {
 		"cardinal-components": [
-			"origins-es:teleport_data"
+			"origins-es:teleport_data",
+			"origins-es:afriend_data"
 		]
 	},
 	"entrypoints": {
 		"main": [
 			"yud0o0.main.OriginsES"
+		],
+		"client": [
+			"yud0o0.main.OriginsESClient"
 		],
 		"fabric-datagen": [
 			"yud0o0.main.ESDataGenerator"
@@ -37,6 +41,8 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*",
-		"origins" : "*"
+		"origins" : "*",
+		"patchouli": "*",
+		"cardinal-components-base": "*"
 	}
 }

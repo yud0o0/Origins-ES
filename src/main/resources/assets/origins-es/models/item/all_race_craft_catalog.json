@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "origins-es:item/all_race_craft_catalog"
+  }
+}

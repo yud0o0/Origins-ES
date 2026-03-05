@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "origins-es:monopoly",
+    "origins-es:gnosis",
+    "origins-es:bookworm",
+    "origins-es:tome",
+    "origins-es:wanted",
+    "origins-es:antiair",
+    "origins-es:atrophy",
+    "origins-es:entropy",
+    "origins-es:monopoly_recipe",
+    "origins-es:gnosis_recipe"
+  ],
+  "icon": {
+    "id": "origins-es:annifleks_crafts"
+  },
+  "order": 3,
+  "impact": 2,
+  "name": "Annifleks"
+}

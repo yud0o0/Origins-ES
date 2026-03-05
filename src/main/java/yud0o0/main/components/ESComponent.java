@@ -4,10 +4,18 @@ import org.ladysnake.cca.api.v3.component.Component;
 import net.minecraft.util.math.GlobalPos;
 import java.util.UUID;
 
-public interface ESComponent extends Component {
-    void setHome(String dimension, GlobalPos pos);
-    GlobalPos getHome(String dimension);
+public class ESComponent {
+    public interface teleport_data extends Component {
+        void setHome(String dimension, GlobalPos pos);
 
-    void setTargetUuid(UUID uuid);
-    UUID getTargetUuid();
+        GlobalPos getHome(String dimension);
+
+        void setTargetUuid(UUID uuid);
+
+        UUID getTargetUuid();
+    }
+    public interface afriend_data extends Component {
+        void setafriend(Boolean YorN);
+        boolean getafriend();
+    }
 }

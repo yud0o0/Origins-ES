@@ -1,0 +1,11 @@
+{
+  "name": "General Knowledge",
+  "category": "origins-es:standard",
+  "icon": "minecraft:paper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This page confirms that the Universal Catalog is correctly loading content from assets."
+    }
+  ]
+}

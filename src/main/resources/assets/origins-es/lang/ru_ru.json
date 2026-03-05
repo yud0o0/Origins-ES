@@ -2,18 +2,27 @@
 
   "enchantment.origins-es.harpoon": "Гарпун",
 
-  "__ITEMS__": "---------------- ПРЕДМЕТЫ ----------------",
+  "__Предметы__": "---------------- ITEMS ----------------",
 
   "item.origins-es.heart": "Сердце",
+
   "item.origins-es.heartbox": "Ящик Жизни",
   "tooltip.origins-es.life_locator.description": "Поместите голову игрока в левую руку, чтобы задать цель для отслеживания.",
+
   "item.origins-es.heartshard": "Осколок Сердца",
   "item.origins-es.lifestealer": "LifeStealer",
   "item.origins-es.rtpingredientsbag1": "Мешочек ингредиентов зелья рандомной телепортации I уровня",
   "item.origins-es.rtpingredientsbag2": "Мешочек ингредиентов зелья рандомной телепортации II уровня",
   "item.origins-es.obsidian_rod": "Стержень Обсидиана",
+  "item.origins-es.tome": "\"Hermaeus Tome\"",
 
-  "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
+  "item.origins-es.annifleks_crafts": "AnniFleks Главный Каталог Крафтов",
+  "origins-es.annifleks_crafts.landing": "Список крафтов доступных AnniFleks",
+
+  "item.origins-es.all_race_craft_catalog": "\"The Universal Race Catalog\"",
+  "origins-es.all_race_craft_catalog.landing": "Полный перечень крафтов, используемых всеми известными цивилизациями.",
+
+  "__Зелья__": "---------------- POTIONS ----------------",
 
   "effect.origins-es.rtp": "Рандомная Телепортация",
   "item.minecraft.potion.effect.rtp_potion": "Зелье Рандомного Телепорта I",
@@ -25,14 +34,16 @@
   "item.minecraft.lingering_potion.effect.absolute_rtp_potion": "Оседающее зелье Рандомного Телепорта II",
   "item.minecraft.tipped_arrow.effect.absolute_rtp_potion": "Стрела Рандомного Телепорта II",
 
-  "__RACES__": "---------------- РАСЫ ----------------",
+  "__Расы__": "---------------- RACES ----------------",
 
   "origin.origins-es.koj428.description": "кто эт нах? Сложность: +5",
   "origin.origins-es.mr_white_____.description": "прост белый чел с такими же белыми... неважно. Сложность: +10",
   "origin.origins-es.yud0o0.description": "Сложность: 0",
   "origin.origins-es.lynn1ell.description": "ріба. Сложность: +5",
+  "origin.origins-es.annifleks.description": "Манапаліст ібаній. Сложность: +5",
 
-  "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
+  "__Способности__": "---------------- POWERS ----------------",
+
 
   "power.origins-es.rtppoting.name": "[+]Настойка деда",
   "power.origins-es.rtppoting.description": "Вы переняли знания своего деда о варке лучших настоек что позволяет вам сделать мешочки ингредиентов для зелья случайной телепортации и абсолютного зелья случайной телепортации. Сложность: +20",
@@ -64,9 +75,6 @@
   "power.origins-es.invertytoggle.name": "[+]Инверсия Y",
   "power.origins-es.invertytoggle.description": "Когда способность активна и вы почти коснулись земли, ваша вертикальная скорость (Y) умножается на ~-1,2, но при этом расходуются заряды ветра из инвентаря. Сложность: +25",
 
-  "power.origins-es.invertylogic.name": "inverty2",
-  "power.origins-es.invertylogic.description": "По определенным причинам мне нужно разделить invertY на два файла не обращай внимание",
-
   "power.origins-es.fallsave.name": "[+]Безопасное падение",
   "power.origins-es.fallsave.description": "Ни один блёб не боится падать. Сложность: +15",
 
@@ -91,7 +99,31 @@
   "power.origins-es.seaorbs.name": "[+]Морские сферы",
   "power.origins-es.seaorbs.description": "Вы знаете как создавать морские сферы(Водяные бомбы и Дождливые облака) и некоторые другие морские штучки которые не могут крафтить остальные игроки. Морские сферы могут помочь вам выжить на суше. Сложность: +5",
 
-  "__MASSAGES__": "---------------- СООБЩЕНИЯ ----------------",
+  "power.origins-es.antiair.name": "[-] ПВО",
+  "power.origins-es.antiair.description": "Ваше присутствие выдает вас. Если в радиусе 80 блоков есть другие игроки, вы теряете способность использовать элитры. Сложность: -5",
+
+  "power.origins-es.atrophy.name": "[-] Атрофия",
+  "power.origins-es.atrophy.description": "Вы привыкли работать головой, а не руками. Скорость добычи ресурсов обычными инструментами значительно снижена. Сложность: -10",
+
+  "power.origins-es.entropy.name": "[-] Энтропия",
+  "power.origins-es.entropy.description": "Мир отторгает вашу связь с ним. Любые предметы в ваших руках разрушаются в 3 раза быстрее обычного. Сложность: -10",
+
+  "power.origins-es.bookworm.name": "[+] Книжный червь",
+  "power.origins-es.bookworm.description": "Ваши познания позволяют вам создавать особые книги, хранящие записи о ваших и чужих секретных чертежах. Сложность: +5",
+
+  "power.origins-es.gnosis.name": "[+] Гнозис",
+  "power.origins-es.gnosis.description": "Вы постигли секреты других народов. Вам доступны уникальные рецепты крафта всех остальных рас. Сложность: +20",
+
+  "power.origins-es.monopoly.name": "[+] Монополия",
+  "power.origins-es.monopoly.description": "Единоличное владение знаниями. Только вы способны создавать уникальные предметы Монополиста. Сложность: +15",
+
+  "power.origins-es.tome.name": "[+] Фолиант",
+  "power.origins-es.tome.description": "Доступ к вашему главному источнику знаний — магическому фолианту Hermaeus. Сложность: +5",
+
+  "power.origins-es.wanted.name": "[-] Розыск",
+  "power.origins-es.wanted.description": "Злоупотребление знаниями имеет цену. Рано или поздно на вас объявят охоту. Бегите. Сложность: -15",
+
+  "__Сообщения__": "---------------- MASSAGES ----------------",
 
   "chat.origins-es.info.more30": "Яблоко нотча не может дать тебе больше 15 сердец.",
   "chat.origins-es.info.offhandheadtip": "Возьмите Локатор в правую руку, а Голову жертвы в левую.",
@@ -106,6 +138,14 @@
   "chat.origins-es.info.tphome_set": "Точка возврата установлена.",
   "chat.origins-es.info.tphome_not_set": "Точка возврата не установлена!",
   "chat.origins-es.info.tpfail_offline": "Цель не найдена или чанк не прогружен.",
-  "chat.origins-es.info.arained": "Дождь уже идет!"
+  "chat.origins-es.info.arained": "Дождь уже идет!",
+
+  "chat.origins-es.info.tome_added": "§aКнига %s Была добавлена в Фолиант!",
+  "chat.origins-es.info.tome_exists": "Эта книга уже есть в твоей библиотеке.",
+  "chat.origins-es.info.tome_selected": "§6Активная книга: §f%s",
+  "chat.origins-es.info.tome_empty": "Фолиант пустой! Возьми Patchouli книгу в левую руку и нажми ПКМ.",
+  "chat.origins-es.info.tooltip_tome_active": "§7Выбрано: §b%s",
+  "chat.origins-es.info.tooltip_tome_empty": "Пусто (Добавь Patchouli книгу)",
+  "chat.origins-es.info.tooltip_tome_total": "§7Всего книг: §a%d"
 
 }

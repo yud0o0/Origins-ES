@@ -24,6 +24,22 @@ public class ESCommands {
                                 return 1;
                             })
                     )
+                    .then(CommandManager.literal("afriend")
+                            .then(CommandManager.literal("Yes")
+                                    .executes(context -> {
+                                        var otherStorage = ESComponents.AFRIEND_DATA.get(context.getSource().getPlayer());
+                                        otherStorage.setafriend(true);
+                                    return 1;
+                                    })
+                            )
+                            .then(CommandManager.literal("No")
+                                    .executes(context -> {
+                                        var otherStorage = ESComponents.AFRIEND_DATA.get(context.getSource().getPlayer());
+                                        otherStorage.setafriend(false);
+                                        return 1;
+                                    })
+                            )
+                    )
             );
         });
     }

@@ -21,14 +21,19 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
+
+import vazkii.patchouli.api.PatchouliAPI;
+import vazkii.patchouli.common.item.PatchouliDataComponents;
 import yud0o0.main.powers.passive.powers.ESHeartsPowers;
 import yud0o0.main.powers.passive.powers.ESWaterBomb;
+import yud0o0.main.tome.ESTome;
 
 import static yud0o0.main.OriginsES.RTP;
 
@@ -62,7 +67,7 @@ public class ESItems {
 
         @Override
         public int getEnchantability() {
-            return 100 ;
+            return 100;
         }
 
         @Override
@@ -74,7 +79,7 @@ public class ESItems {
             new SwordItem(
                     LIFE,
                     new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(LIFE, 2, -1.8f)).rarity(Rarity.EPIC)
-                    );
+            );
     public static final Potion RTPPOT =
             new Potion(
                     new StatusEffectInstance(RTP, 1, 0)
@@ -113,17 +118,50 @@ public class ESItems {
             }
             return TypedActionResult.success(itemStack, world.isClient());
         }
+
         @Override
         public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-            // Если предмет в руке (selected) и идет дождь
             if (selected && world.isRaining() && entity instanceof LivingEntity) {
-                if (!world.isClient && world.getTime() % 5 == 0) { // Раз в 5 тиков, чтобы не лагало
+                if (!world.isClient && world.getTime() % 5 == 0) {
                     ServerWorld serverWorld = (ServerWorld) world;
                     serverWorld.spawnParticles(ParticleTypes.CLOUD, entity.getX(), entity.getY() + 0.1, entity.getZ(), 10, 0.3, 0.3, 0.3, 0);
                 }
             }
         }
     };
+    public static final Item TOME =
+            new ESTome(new Item.Settings().maxCount(1).rarity(Rarity.EPIC));
+
+    public static final Item ANNIFLEKS_CRAFTS =
+            new Item(new Item.Settings()
+                    .maxCount(1)
+                    .component(PatchouliDataComponents.BOOK, Identifier.of("origins-es", "annifleks_crafts"))
+            ) {
+                @Override
+                public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+                    ItemStack stack = user.getStackInHand(hand);
+                    if (!world.isClient && user instanceof ServerPlayerEntity serverPlayer) {
+                        PatchouliAPI.get().openBookGUI(serverPlayer, Identifier.of("origins-es", "annifleks_crafts"));
+                    }
+                    return TypedActionResult.success(stack);
+                }
+            };
+
+    public static final Item RACE_CATALOG =
+            new Item(new Item.Settings()
+                    .maxCount(1)
+                    .component(PatchouliDataComponents.BOOK, Identifier.of("origins-es", "all_race_craft_catalog"))
+            ) {
+                @Override
+                public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+                    ItemStack stack = user.getStackInHand(hand);
+                    if (!world.isClient && user instanceof ServerPlayerEntity serverPlayer) {
+                        PatchouliAPI.get().openBookGUI(serverPlayer, Identifier.of("origins-es", "all_race_craft_catalog"));
+                    }
+                    return TypedActionResult.success(stack);
+                }
+            };
+
 
     public static void register() {
 
@@ -174,7 +212,21 @@ public class ESItems {
                 Identifier.of("origins-es", "nimbus"),
                 NIMBUS
         );
-
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of("origins-es", "tome"),
+                TOME
+        );
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of("origins-es", "annifleks_crafts"),
+                ANNIFLEKS_CRAFTS
+        );
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of("origins-es", "all_race_craft_catalog"),
+                RACE_CATALOG
+        );
 
 
         if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT) {
@@ -218,7 +270,6 @@ public class ESItems {
         });
 
 
-
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(
                     Potions.AWKWARD,
@@ -233,7 +284,6 @@ public class ESItems {
                     OriginsES.ABSOLUTERTPPOT
             );
         });
-
 
 
     }

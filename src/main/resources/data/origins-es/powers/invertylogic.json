@@ -1,5 +1,6 @@
 {
   "type": "apoli:action_over_time",
+  "hidden": true,
   "interval": 1,
   "entity_action": {
     "type": "origins-es:invert-y"

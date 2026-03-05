@@ -2,11 +2,13 @@
 
   "enchantment.origins-es.harpoon": "Harpoon",
 
-  "__ITEMS__": "---------------- ПРЕДМЕТЫ ----------------",
+  "__Предметы__": "---------------- ITEMS ----------------",
 
   "item.origins-es.heart": "Heart",
+
   "item.origins-es.heartbox": "Heart Box",
   "tooltip.origins-es.life_locator.description": "take player head in off hand and use this item to find them.",
+
   "item.origins-es.heartshard": "Heart Shard",
   "item.origins-es.lifestealer": "LifeStealer",
   "item.origins-es.rtpingredientsbag1": "RTP Ingredient bag I",
@@ -14,8 +16,15 @@
   "item.origins-es.obsidian_rod": "Obsidian Rod",
   "item.origins-es.water_bomb": "Water Bomb",
   "item.origins-es.nimbus": "Nimbus",
+  "item.origins-es.tome": "Hermaeus Tome",
 
-  "__POTIONS__": "---------------- ЗЕЛЬЯ ----------------",
+  "item.origins-es.annifleks_crafts": "AnniFleks Main Crafts Catalog",
+  "origins-es.annifleks_crafts.landing": "Catalog of AnniFleks's crafts",
+
+  "item.origins-es.all_race_craft_catalog": "The Universal Race Catalog",
+  "origins-es.all_race_craft_catalog.landing": "A comprehensive index of crafting techniques used by all recognized civilizations.",
+
+  "__Зелья__": "---------------- POTIONS ----------------",
 
   "effect.origins-es.rtp": "RTP",
   "item.minecraft.potion.effect.rtp_potion": "RTP Potion I",
@@ -27,14 +36,15 @@
   "item.minecraft.lingering_potion.effect.absolute_rtp_potion": "RTP Lingering Potion II",
   "item.minecraft.tipped_arrow.effect.absolute_rtp_potion": "RTP Arrow II",
 
-  "__RACES__": "---------------- РАСЫ ----------------",
+  "__Расы__": "---------------- RACES ----------------",
 
   "origin.origins-es.koj428.description": "who the fck is this? difficult: +5",
   "origin.origins-es.mr_white_____.description": "white man with white... nevermind. difficult: +10",
   "origin.origins-es.yud0o0.description": "difficult: 0",
-  "origin.origins-es.lynn1ell.description": "fish. Сложность: +5",
+  "origin.origins-es.lynn1ell.description": "fish. difficult: +5",
+  "origin.origins-es.annifleks.description": "monopolist ebaniy. difficult: +5",
 
-  "__POWERS__": "---------------- СПОСОБНОСТИ ----------------",
+  "__Способности__": "---------------- POWERS ----------------",
 
   "power.origins-es.rtppoting.name": "[+]Grandpa's tincture",
   "power.origins-es.rtppoting.description": "You’ve inherited your grandpa's legendary moonshine wisdom. This lets you craft sketchy ingredient bags for both Random Teleport and Absolute Random Teleport potions. Side effects may include sudden location changes. difficulty: +20",
@@ -66,9 +76,6 @@
   "power.origins-es.invertytoggle.name": "[+]Invert Y",
   "power.origins-es.invertytoggle.description": "When the ability is on and you almost fell to the ground your Y velocity multiplies on ~-1,2 but it will spend wind charge`s in your inventory. difficult: +25",
 
-  "power.origins-es.invertylogic.name": "inverty2",
-  "power.origins-es.invertylogic.description": "For some reasons i need to split invertY in to 2 files ignore this",
-
   "power.origins-es.fallsave.name": "[+]Fall save",
   "power.origins-es.fallsave.description": "Any blob never scared to fall. difficult: +15",
 
@@ -93,7 +100,31 @@
   "power.origins-es.seaorbs.name": "[+]Sea Orbs",
   "power.origins-es.seaorbs.description": "you have knowledge to create sea orbs(Water bombs, Nimbus's) and some sea things that cant be crafted by other players. sea orbs can help you to survive on land. difficult: +10",
 
-  "__MASSAGES__": "---------------- СООБЩЕНИЯ ----------------",
+  "power.origins-es.antiair.name": "[-] Antiair",
+  "power.origins-es.antiair.description": "Your presence gives you away. If there are other players within an 80-block radius, you lose the ability to use elytra. difficult: -5",
+
+  "power.origins-es.atrophy.name": "[-] Atrophy",
+  "power.origins-es.atrophy.description": "Accustomed to mental labor, you find physical work taxing. Mining speed with standard tools is significantly reduced. difficult: -10",
+
+  "power.origins-es.entropy.name": "[-] Entropy",
+  "power.origins-es.entropy.description": "The world rejects your connection to it. Any items held in your hands lose durability 3 times faster. difficult: -10",
+
+  "power.origins-es.bookworm.name": "[+] Bookworm",
+  "power.origins-es.bookworm.description": "Your mastery allows you to craft special books containing both your own and others' secret blueprints. difficult: +5",
+
+  "power.origins-es.gnosis.name": "[+] Gnosis",
+  "power.origins-es.gnosis.description": "You have grasped the secrets of other cultures. You can access unique crafting recipes from all other races. difficult: +20",
+
+  "power.origins-es.monopoly.name": "[+] Monopoly",
+  "power.origins-es.monopoly.description": "Sole ownership of knowledge. Only you can craft the unique items of the Monopolist. difficult: +15",
+
+  "power.origins-es.tome.name": "[+] Tome",
+  "power.origins-es.tome.description": "Access to your primary source of knowledge — the Hermaeus tome. difficult: +5",
+
+  "power.origins-es.wanted.name": "[-] Wanted",
+  "power.origins-es.wanted.description": "Abusing knowledge comes at a price. Eventually, a bounty will be placed on your head. Run. difficult: -15",
+
+  "__Сообщения__": "---------------- MASSAGES ----------------",
 
   "chat.origins-es.info.more30": "God Apple can't give you more than you have.",
   "chat.origins-es.info.offhandheadtip": "Hold the Locator in your right hand and the Victim's Head in your left.",
@@ -108,6 +139,14 @@
   "chat.origins-es.info.tphome_set": "Return point set.",
   "chat.origins-es.info.tphome_not_set": "Return point not set!",
   "chat.origins-es.info.tpfail_offline": "Target not found or chunk not loaded.",
-  "chat.origins-es.info.arained": "It's already raining!"
+  "chat.origins-es.info.arained": "It's already raining!",
+
+  "chat.origins-es.info.tome_added": "Book %s has been added to the tome!",
+  "chat.origins-es.info.tome_exists": "This book is already in your library.",
+  "chat.origins-es.info.tome_selected": "§6Active book: §f%s",
+  "chat.origins-es.info.tome_empty": "Tome is empty! Hold a Patchouli book in your off-hand and right-click.",
+  "chat.origins-es.info.tooltip_tome_active": "§7Selected: §b%s",
+  "chat.origins-es.info.tooltip_tome_empty": "Empty (Consume a Patchouli book)",
+  "chat.origins-es.info.tooltip_tome_total": "§7Total books: §a%d"
 
 }
